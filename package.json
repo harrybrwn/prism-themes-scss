@@ -1,0 +1,19 @@
+{
+  "name": "prism-themes-scss",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Harry Brown",
+  "license": "MIT",
+  "private": false,
+  "sass": "src/main.scss",
+  "scripts": {
+    "lint": "stylelint \"**/*.{css,scss}\""
+  },
+  "dependencies": {
+    "sass": "^1.57.1"
+  },
+  "devDependencies": {
+    "stylelint": "^14.16.1",
+    "stylelint-config-standard-scss": "^6.1.0"
+  }
+}
