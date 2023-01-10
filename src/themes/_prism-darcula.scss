@@ -19,23 +19,8 @@
     word-spacing: normal;
     word-break: normal;
     line-height: 1.5;
-
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
     tab-size: 4;
-
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
     hyphens: none;
-  }
-
-  pre[class*="language-"]::-moz-selection,
-  pre[class*="language-"] ::-moz-selection,
-  code[class*="language-"]::-moz-selection,
-  code[class*="language-"] ::-moz-selection {
-    color: inherit;
-    background: rgba(33, 66, 131, 0.85);
   }
 
   pre[class*="language-"]::selection,
@@ -43,7 +28,7 @@
   code[class*="language-"]::selection,
   code[class*="language-"] ::selection {
     color: inherit;
-    background: rgba(33, 66, 131, 0.85);
+    background: rgb(33 66 131 / 85%);
   }
 
   /* Code blocks */

@@ -1,5 +1,6 @@
+@import "https://fonts.googleapis.com/css?family=Fira+Mono";
+
 @mixin prism-hopscotch {
-  @import url(https://fonts.googleapis.com/css?family=Fira+Mono);
   /*
  * Hopscotch
  * by Jan T. Sott
@@ -10,21 +11,20 @@
 
   code[class*="language-"],
   pre[class*="language-"] {
-    font-family: "Fira Mono", Menlo, Monaco, "Lucida Console", "Courier New",
-      Courier, monospace;
+    font-family:
+      "Fira Mono",
+      Menlo,
+      Monaco,
+      "Lucida Console",
+      "Courier New",
+      Courier,
+      monospace;
     font-size: 16px;
     line-height: 1.375;
     direction: ltr;
     text-align: left;
     word-spacing: normal;
-
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
     tab-size: 4;
-
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
     hyphens: none;
     white-space: pre;
     white-space: pre-wrap;

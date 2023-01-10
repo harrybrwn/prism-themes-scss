@@ -19,14 +19,7 @@
     word-break: normal;
     word-wrap: normal;
     line-height: 1.5;
-
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
     tab-size: 4;
-
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
     hyphens: none;
   }
 
@@ -86,13 +79,19 @@
   .token.selector .token.id,
   .token.function {
     color: #fdfdfd;
-    text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975,
+    text-shadow:
+      0 0 2px #001716,
+      0 0 3px #03edf975,
+      0 0 5px #03edf975,
       0 0 8px #03edf975;
   }
 
   .token.class-name {
     color: #fff5f6;
-    text-shadow: 0 0 2px #000, 0 0 10px #fc1f2c75, 0 0 5px #fc1f2c75,
+    text-shadow:
+      0 0 2px #000,
+      0 0 10px #fc1f2c75,
+      0 0 5px #fc1f2c75,
       0 0 25px #fc1f2c75;
   }
 

@@ -18,20 +18,8 @@
     word-break: normal;
     word-wrap: normal;
     line-height: 1.5;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
     tab-size: 4;
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
     hyphens: none;
-  }
-
-  pre[class*="language-"]::-moz-selection,
-  pre[class*="language-"] ::-moz-selection,
-  code[class*="language-"]::-moz-selection,
-  code[class*="language-"] ::-moz-selection {
-    background: #8da1b9;
   }
 
   pre[class*="language-"]::selection,
@@ -203,10 +191,10 @@
   /* overrides color-values for the Show Invisibles plugin
  * https://prismjs.com/plugins/show-invisibles/
  */
-  .token.token.tab:not(:empty):before,
-  .token.token.cr:before,
-  .token.token.lf:before,
-  .token.token.space:before {
+  .token.token.tab:not(:empty)::before,
+  .token.token.cr::before,
+  .token.token.lf::before,
+  .token.token.space::before {
     color: #3c526d;
   }
 
@@ -243,16 +231,14 @@
     background: linear-gradient(to right, #8da1b92f 70%, #8da1b925);
   }
 
-  .line-highlight.line-highlight:before,
-  .line-highlight.line-highlight[data-end]:after {
+  .line-highlight.line-highlight::before,
+  .line-highlight.line-highlight[data-end]::after {
     background-color: #3c526d;
     color: #e3eaf2;
     box-shadow: 0 1px #8da1b9;
   }
 
-  pre[id].linkable-line-numbers.linkable-line-numbers
-    span.line-numbers-rows
-    > span:hover:before {
+  pre[id].linkable-line-numbers.linkable-line-numbers span.line-numbers-rows > span:hover::before {
     background-color: #3c526d1f;
   }
 
@@ -264,7 +250,7 @@
     background: #d0dae77a;
   }
 
-  .line-numbers .line-numbers-rows > span:before {
+  .line-numbers .line-numbers-rows > span::before {
     color: #3c526dda;
   }
 
@@ -315,7 +301,7 @@
     border-right: 1px solid #8da1b97a;
   }
 
-  .command-line .command-line-prompt > span:before {
+  .command-line .command-line-prompt > span::before {
     color: #3c526dda;
   }
 }

@@ -14,18 +14,16 @@
     white-space: pre;
     word-spacing: normal;
     word-break: normal;
-
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
     tab-size: 4;
-
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
     hyphens: none;
-
-    font-family: "Operator Mono", "Fira Code", Consolas, Monaco, "Andale Mono",
-      "Ubuntu Mono", monospace;
+    font-family:
+      "Operator Mono",
+      "Fira Code",
+      Consolas,
+      Monaco,
+      "Andale Mono",
+      "Ubuntu Mono",
+      monospace;
     font-weight: 400;
     font-size: 17px;
     line-height: 25px;
@@ -33,10 +31,6 @@
     text-shadow: 0 1px #222245;
   }
 
-  pre[class*="language-"]::-moz-selection,
-  pre[class*="language-"] ::-moz-selection,
-  code[class*="language-"]::-moz-selection,
-  code[class*="language-"] ::-moz-selection,
   pre[class*="language-"]::selection,
   pre[class*="language-"] ::selection,
   code[class*="language-"]::selection,
@@ -83,22 +77,22 @@
 
   .token.operator,
   .token.attr-name {
-    color: rgb(255, 180, 84);
+    color: rgb(255 180 84);
   }
 
   .token.punctuation {
-    color: #ffffff;
+    color: #fff;
   }
 
   .token.boolean {
-    color: rgb(255, 98, 140);
+    color: rgb(255 98 140);
   }
 
   .token.tag,
   .token.tag .punctuation,
   .token.doctype,
   .token.builtin {
-    color: rgb(255, 157, 0);
+    color: rgb(255 157 0);
   }
 
   .token.entity,
@@ -136,7 +130,7 @@
   }
 
   .token.function {
-    color: rgb(250, 208, 0);
+    color: rgb(250 208 0);
   }
 
   .token.regex {
@@ -152,7 +146,7 @@
   }
 
   .token.inserted {
-    background: #00ff00;
+    background: #0f0;
   }
 
   .token.deleted {
@@ -189,15 +183,11 @@
 
   .line-highlight.line-highlight {
     margin-top: 36px;
-    background: linear-gradient(
-      to right,
-      rgba(179, 98, 255, 0.17),
-      transparent
-    );
+    background: linear-gradient(to right, rgb(179 98 255 / 17%), transparent);
   }
 
-  .line-highlight.line-highlight:before,
-  .line-highlight.line-highlight[data-end]:after {
+  .line-highlight.line-highlight::before,
+  .line-highlight.line-highlight[data-end]::after {
     content: "";
   }
 }

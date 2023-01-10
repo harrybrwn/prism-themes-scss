@@ -4,20 +4,21 @@
     color: #d4d4d4;
     font-size: 13px;
     text-shadow: none;
-    font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono",
-      "Courier New", monospace;
+    font-family:
+      Menlo,
+      Monaco,
+      Consolas,
+      "Andale Mono",
+      "Ubuntu Mono",
+      "Courier New",
+      monospace;
     direction: ltr;
     text-align: left;
     white-space: pre;
     word-spacing: normal;
     word-break: normal;
     line-height: 1.5;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
     tab-size: 4;
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
     hyphens: none;
   }
 
@@ -49,9 +50,10 @@
     color: #db4c69;
     background: #1e1e1e;
   }
+
   /*********************************************************
-* Tokens
-*/
+   * Tokens
+   */
   .namespace {
     opacity: 0.7;
   }
@@ -108,6 +110,16 @@
     color: #569cd6;
   }
 
+  .token.class-name,
+  .token.maybe-class-name {
+    color: #4ec9b0;
+  }
+
+  .token.function,
+  .token.function .token.maybe-class-name {
+    color: #dcdcaa;
+  }
+
   .token.atrule {
     color: #ce9178;
   }
@@ -137,11 +149,6 @@
     color: #c586c0;
   }
 
-  .token.function,
-  .token.function .token.maybe-class-name {
-    color: #dcdcaa;
-  }
-
   .token.regex {
     color: #d16969;
   }
@@ -156,11 +163,6 @@
 
   .token.constant {
     color: #9cdcfe;
-  }
-
-  .token.class-name,
-  .token.maybe-class-name {
-    color: #4ec9b0;
   }
 
   .token.console {
@@ -230,9 +232,10 @@
   .token.namespace {
     color: #4ec9b0;
   }
+
   /*********************************************************
-* Language Specific
-*/
+   * Language Specific
+   */
 
   pre[class*="language-javascript"],
   code[class*="language-javascript"],
@@ -262,9 +265,10 @@
   .language-html .token.punctuation {
     color: #808080;
   }
+
   /*********************************************************
-* Line highlighting
-*/
+   * Line highlighting
+   */
   pre[class*="language-"] > code[class*="language-"] {
     position: relative;
     z-index: 1;

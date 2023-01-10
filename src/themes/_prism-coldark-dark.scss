@@ -18,20 +18,8 @@
     word-break: normal;
     word-wrap: normal;
     line-height: 1.5;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
     tab-size: 4;
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
     hyphens: none;
-  }
-
-  pre[class*="language-"]::-moz-selection,
-  pre[class*="language-"] ::-moz-selection,
-  code[class*="language-"]::-moz-selection,
-  code[class*="language-"] ::-moz-selection {
-    background: #3c526d;
   }
 
   pre[class*="language-"]::selection,
@@ -75,7 +63,7 @@
   .token.selector .parent,
   .token.tag,
   .token.tag .token.punctuation {
-    color: #66cccc;
+    color: #6cc;
   }
 
   .token.attr-name,
@@ -169,7 +157,7 @@
   }
 
   .language-markdown .token.code {
-    color: #66cccc;
+    color: #6cc;
   }
 
   .language-markdown .token.hr.punctuation {
@@ -197,16 +185,16 @@
   }
 
   .language-scss .token.variable {
-    color: #66cccc;
+    color: #6cc;
   }
 
   /* overrides color-values for the Show Invisibles plugin
  * https://prismjs.com/plugins/show-invisibles/
  */
-  .token.token.tab:not(:empty):before,
-  .token.token.cr:before,
-  .token.token.lf:before,
-  .token.token.space:before {
+  .token.token.tab:not(:empty)::before,
+  .token.token.cr::before,
+  .token.token.lf::before,
+  .token.token.space::before {
     color: #8da1b9;
   }
 
@@ -243,16 +231,14 @@
     background: linear-gradient(to right, #3c526d5f 70%, #3c526d55);
   }
 
-  .line-highlight.line-highlight:before,
-  .line-highlight.line-highlight[data-end]:after {
+  .line-highlight.line-highlight::before,
+  .line-highlight.line-highlight[data-end]::after {
     background-color: #8da1b9;
     color: #111b27;
     box-shadow: 0 1px #3c526d;
   }
 
-  pre[id].linkable-line-numbers.linkable-line-numbers
-    span.line-numbers-rows
-    > span:hover:before {
+  pre[id].linkable-line-numbers.linkable-line-numbers span.line-numbers-rows > span:hover::before {
     background-color: #8da1b918;
   }
 
@@ -264,7 +250,7 @@
     background: #0b121b7a;
   }
 
-  .line-numbers .line-numbers-rows > span:before {
+  .line-numbers .line-numbers-rows > span::before {
     color: #8da1b9da;
   }
 
@@ -315,7 +301,7 @@
     border-right: 1px solid #0b121b;
   }
 
-  .command-line .command-line-prompt > span:before {
+  .command-line .command-line-prompt > span::before {
     color: #8da1b9da;
   }
 }

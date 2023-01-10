@@ -8,25 +8,11 @@
     word-wrap: normal;
     color: #eee;
     background: #2f2f2f;
-    font-family: Roboto Mono, monospace;
+    font-family: "Roboto Mono", monospace;
     font-size: 1em;
     line-height: 1.5em;
-
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
     tab-size: 4;
-
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
     hyphens: none;
-  }
-
-  code[class*="language-"]::-moz-selection,
-  pre[class*="language-"]::-moz-selection,
-  code[class*="language-"] ::-moz-selection,
-  pre[class*="language-"] ::-moz-selection {
-    background: #363636;
   }
 
   code[class*="language-"]::selection,
@@ -108,7 +94,7 @@
   }
 
   .token.deleted {
-    color: #ff6666;
+    color: #f66;
   }
 
   .token.doctype {
@@ -116,7 +102,7 @@
   }
 
   .token.entity {
-    color: #ff6666;
+    color: #f66;
   }
 
   .token.function {
@@ -178,7 +164,7 @@
   }
 
   .token.selector {
-    color: #ff6666;
+    color: #f66;
   }
 
   .token.string {
@@ -190,7 +176,7 @@
   }
 
   .token.tag {
-    color: #ff6666;
+    color: #f66;
   }
 
   .token.unit {
@@ -198,10 +184,10 @@
   }
 
   .token.url {
-    color: #ff6666;
+    color: #f66;
   }
 
   .token.variable {
-    color: #ff6666;
+    color: #f66;
   }
 }

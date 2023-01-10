@@ -9,10 +9,21 @@ Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
 
   code[class*="language-"],
   pre[class*="language-"] {
-    font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono",
-      "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
-      "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L",
-      "Courier New", Courier, monospace;
+    font-family:
+      Consolas,
+      Menlo,
+      Monaco,
+      "Andale Mono WT",
+      "Andale Mono",
+      "Lucida Console",
+      "Lucida Sans Typewriter",
+      "DejaVu Sans Mono",
+      "Bitstream Vera Sans Mono",
+      "Liberation Mono",
+      "Nimbus Mono L",
+      "Courier New",
+      Courier,
+      monospace;
     font-size: 14px;
     line-height: 1.375;
     direction: ltr;
@@ -20,14 +31,7 @@ Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
     white-space: pre;
     word-spacing: normal;
     word-break: normal;
-
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
     tab-size: 4;
-
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
     hyphens: none;
     background: #322d29;
     color: #88786d;
@@ -35,14 +39,6 @@ Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
 
   pre > code[class*="language-"] {
     font-size: 1em;
-  }
-
-  pre[class*="language-"]::-moz-selection,
-  pre[class*="language-"] ::-moz-selection,
-  code[class*="language-"]::-moz-selection,
-  code[class*="language-"] ::-moz-selection {
-    text-shadow: none;
-    background: #6f5849;
   }
 
   pre[class*="language-"]::selection,
@@ -166,7 +162,7 @@ Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
     border-right-color: #35302b;
   }
 
-  .line-numbers .line-numbers-rows > span:before {
+  .line-numbers .line-numbers-rows > span::before {
     color: #46403d;
   }
 
@@ -174,16 +170,18 @@ Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
 * http://prismjs.com/plugins/line-highlight/
 */
   .line-highlight.line-highlight {
-    background: rgba(191, 160, 90, 0.2);
-    background: -webkit-linear-gradient(
-      left,
-      rgba(191, 160, 90, 0.2) 70%,
-      rgba(191, 160, 90, 0)
-    );
-    background: linear-gradient(
-      to right,
-      rgba(191, 160, 90, 0.2) 70%,
-      rgba(191, 160, 90, 0)
-    );
+    background: rgb(191 160 90 / 20%);
+    background:
+      linear-gradient(
+        left,
+        rgb(191 160 90 / 20%) 70%,
+        rgb(191 160 90 / 0%)
+      );
+    background:
+      linear-gradient(
+        to right,
+        rgb(191 160 90 / 20%) 70%,
+        rgb(191 160 90 / 0%)
+      );
   }
 }

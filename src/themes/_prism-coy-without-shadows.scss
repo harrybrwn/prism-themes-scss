@@ -17,14 +17,7 @@
     word-break: normal;
     word-wrap: normal;
     line-height: 1.5;
-
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
     tab-size: 4;
-
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
     hyphens: none;
   }
 
@@ -34,10 +27,11 @@
     border-left: 10px solid #358ccb;
     box-shadow: -1px 0 0 0 #358ccb, 0 0 0 1px #dfdfdf;
     background-color: #fdfdfd;
-    background-image: linear-gradient(
-      transparent 50%,
-      rgba(69, 142, 209, 0.04) 50%
-    );
+    background-image:
+      linear-gradient(
+        transparent 50%,
+        rgb(69 142 209 / 4%) 50%
+      );
     background-size: 3em 3em;
     background-origin: content-box;
     background-attachment: local;
@@ -55,12 +49,10 @@
     padding: 0.2em;
     border-radius: 0.3em;
     color: #c92c2c;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(0 0 0 / 10%);
     display: inline;
     white-space: normal;
     background-color: #fdfdfd;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
@@ -102,7 +94,7 @@
   .token.url,
   .token.variable {
     color: #a67f59;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgb(255 255 255 / 50%);
   }
 
   .token.atrule,
@@ -120,7 +112,7 @@
   .language-css .token.string,
   .style .token.string {
     color: #a67f59;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgb(255 255 255 / 50%);
   }
 
   .token.important {
